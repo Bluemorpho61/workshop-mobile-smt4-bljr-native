@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExplicitIntent">
+
+    <TextView
+        android:layout_marginTop="29dp"
+        android:id="@+id/btn_konfirm_exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siapa nama anda?"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:layout_marginStart="12dp"
+        />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btn_konfirm_exp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama saya adalah:"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/nm_explicit"
+            android:layout_marginLeft="15dp"
+            android:hint="Ketik disini"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            />
+    </LinearLayout>
+    <Button
+        android:text="KONFIRMASI"
+        android:id="@+id/btn_explIntent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/btn_konfirm_exp"
+        />
+
+</RelativeLayout>
